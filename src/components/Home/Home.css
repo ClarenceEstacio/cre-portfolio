@@ -1,0 +1,51 @@
+.Home {
+  @apply min-h-[100vh] py-20 px-8 flex flex-wrap justify-center items-center gap-8  text-light sm:py-4;
+}
+
+.home-image {
+  @apply w-80 h-80 sm:w-96 sm:h-96 flex justify-center items-center;
+}
+
+.image-border {
+  @apply border-4 border-blush p-4 sm:p-6 shadow-2xl rounded-full;
+}
+
+.round-image {
+  @apply rounded-full w-full h-full object-cover shadow-md shadow-light;
+}
+
+.home-content {
+  @apply max-w-5xl text-center space-y-4;
+}
+
+.content-name {
+  @apply text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-inter tracking-wide;
+}
+
+.highlight-name {
+  @apply text-blush text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold block mt-2;
+}
+
+.content-course {
+  @apply text-xl sm:text-2xl lg:text-3xl text-grayish font-semibold;
+}
+
+.content-goal {
+  @apply text-lg sm:text-xl lg:text-2xl text-light italic;
+}
+
+.content-text {
+  @apply text-base sm:text-lg lg:text-xl leading-relaxed px-4;
+}
+
+.blush-text {
+  @apply text-blush font-bold;
+}
+
+.coral-text {
+  @apply text-coral font-bold;
+}
+
+.highlight-tech {
+  @apply text-light underline underline-offset-4 decoration-blush;
+}

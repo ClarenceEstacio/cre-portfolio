@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+.top-navbar {
+  @apply bg-dark text-light px-8 py-4 flex justify-between items-center shadow-2xl border-b rounded-full relative;
+}
+
+.navbar-text {
+  @apply text-light text-xl font-bold tracking-wide font-mono flex;
+}
+
+.navh1 {
+  @apply text-blush;
+}
+
+.navbar-link {
+  @apply text-light text-lg font-semibold hover:text-blush transition-colors duration-300;
+}
+
+/* Default - hidden hamburger on large screens */
+.hamburger {
+  @apply hidden flex-col gap-1 cursor-pointer;
+}
+
+.bar {
+  @apply w-6 h-1 bg-light transition-all duration-300;
+}
+
+.nav-links {
+  @apply flex gap-8 text-light font-inter;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    @apply flex;
+  }
+
+  .nav-links {
+    @apply flex-col absolute top-20 right-8 bg-dark bg-opacity-90 rounded-xl px-6 py-4 gap-4 items-end shadow-lg hidden;
+  }
+
+  .nav-links.show {
+    @apply flex;
+  }
+}
